@@ -4,18 +4,16 @@ Flask Sphinx Themes
 This repository contains Sphinx themes for Flask and Flask related
 projects.  To use this theme in your Sphinx documentation:
 
-1. Put this folder as ``_themes`` in the docs folder.
-
-    * Alternatively you can also use git submodules to check out the
-        contents there.
+1. Put this folder as ``_themes`` in the docs folder.  Alternatively
+   you can use git submodules to check out the contents there.
 
 2. Add this to ``conf.py``:
 
-    .. sourcecode: python
+   .. code-block:: python
 
-        sys.path.append(os.path.abspath('_themes'))
-        html_theme_path = ['_themes']
-        html_theme = 'flask'
+       sys.path.append(os.path.join(os.path.dirname(__file__), '_themes'))
+       html_theme_path = ['_themes']
+       html_theme = 'flask'
 
 Themes
 ------
@@ -36,30 +34,28 @@ Options
 The following options can be set with ``html_theme_options``.
 
 ======================= ===============================================
-index_logo              Filename of a picture in _static to be used
-                        as replacement for the h1 in the index.rst
-                        file.
-
+index_logo              Filename of a picture in ``_static`` to be used
+                        as replacement for the ``h1`` in the
+                        ``index.rst`` file.
                         *Default unset.*
 
 index_logo_height       Height of the index logo.
-
                         *Default 120px*.
 
 touch_icon              Filename of a picture in ``_static`` to be use
                         as the app icon on Apple devices.
-
                         *Default unset.*
 
 github_fork             Repository name on GitHub for the "Fork Me"
                         badge.
-
                         *Default unset.*
 
 github_ribbon_color     Color for the "Fork Me" badge.
-
                         *Default darkblue_121621.*
 ======================= ===============================================
+
+Sidebar Templates
+-----------------
 
 The following sidebar templates can be included in ``html_sidebars``.
 
