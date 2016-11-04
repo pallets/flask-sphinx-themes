@@ -4,15 +4,12 @@ Flask Sphinx Themes
 This repository contains Sphinx themes for Flask and Flask related
 projects.  To use this theme in your Sphinx documentation:
 
-1. Put this folder as ``_themes`` in the docs folder.  Alternatively
-   you can use git submodules to check out the contents there.
+1. Install the package using pip: `pip install Flask-Spinx-Themes`
 
 2. Add this to ``conf.py``:
 
    .. code-block:: python
 
-       sys.path.append(os.path.join(os.path.dirname(__file__), '_themes'))
-       html_theme_path = ['_themes']
        html_theme = 'flask'
 
 Themes
@@ -68,4 +65,4 @@ Pygments Style
 
 The theme automatically sets ``pygments_style`` to the provided style.
 Make sure you remove any override from ``conf.py`` or set it to
-``flask_theme_support.FlaskyStyle``.
+``flask_sphinx_themes.pygments.FlaskyStyle``.

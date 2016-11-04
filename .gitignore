@@ -2,3 +2,6 @@
 *.pyo
 .DS_Store
 .idea
+build
+dist
+*.egg-info
