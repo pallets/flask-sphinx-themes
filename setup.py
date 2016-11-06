@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import re
+from io import open  # for python 2 compat (missing 'encoding' kw)
 
 from setuptools import setup
 
