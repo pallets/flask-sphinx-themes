@@ -1,15 +1,19 @@
 #!/usr/bin/env python
+import io
 import os
 import re
-from io import open  # for python 2 compat (missing 'encoding' kw)
 
 from setuptools import setup
 
-with open('README.rst', 'rt', encoding='utf8') as f:
+with io.open('README.rst', 'rt', encoding='utf8') as f:
     readme = f.read()
 
-with open(os.path.join('flask_sphinx_themes', '__init__.py'), 'rt', encoding='utf8') as f:
-    version = re.search(r'^__version__ = \'(\d+\.(?:\d+\.)*\d+)\'', f.read(), re.M).group(1)
+with io.open(
+    os.path.join('flask_sphinx_themes', '__init__.py'), 'rt', encoding='utf8'
+) as f:
+    version = re.search(
+        r'^__version__ = \'(\d+\.(?:\d+\.)*\d+)\'', f.read(), re.M
+    ).group(1)
 
 setup(
     name='Flask-Sphinx-Themes',
@@ -26,8 +30,12 @@ setup(
     zip_safe=False,
     install_requires=['Sphinx'],
     entry_points={
-        'sphinx_themes': [
-            'path = flask_sphinx_themes:get_path',
+        'sphinx.html_themes': [
+            'flask = flask_sphinx_themes',
+            'flask_small = flask_sphinx_themes',
+        ],
+        'pygments.styles': [
+            'flasky = flask_sphinx_themes.pygments:FlaskyStyle',
         ],
     },
     license='BSD',

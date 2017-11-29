@@ -8,11 +8,11 @@
 
 {% set page_width = '940px' %}
 {% set sidebar_width = '220px' %}
- 
+
 @import url("basic.css");
- 
-/* -- page layout ----------------------------------------------------------- */
- 
+
+/* -- page layout ---------------------------------------------------------- */
+
 body {
     font-family: 'Georgia', serif;
     font-size: 17px;
@@ -41,12 +41,12 @@ div.sphinxsidebar {
 }
 
 hr {
-    border: 1px solid #B1B4B6;
+    border: 1px solid #b1b4b6;
 }
- 
+
 div.body {
-    background-color: #ffffff;
-    color: #3E4349;
+    background-color: #fff;
+    color: #3e4349;
     padding: 0 30px 0 30px;
 }
 
@@ -54,7 +54,7 @@ img.floatingflask {
     padding: 0 0 10px 10px;
     float: right;
 }
- 
+
 div.footer {
     width: {{ page_width }};
     margin: 20px auto 30px auto;
@@ -70,7 +70,7 @@ div.footer a {
 div.related {
     display: none;
 }
- 
+
 div.sphinxsidebar a {
     color: #444;
     text-decoration: none;
@@ -80,7 +80,7 @@ div.sphinxsidebar a {
 div.sphinxsidebar a:hover {
     border-bottom: 1px solid #999;
 }
- 
+
 div.sphinxsidebar {
     font-size: 14px;
     line-height: 1.5;
@@ -95,7 +95,7 @@ div.sphinxsidebarwrapper p.logo {
     margin: 0;
     text-align: center;
 }
- 
+
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
     font-family: 'Garamond', 'Georgia', serif;
@@ -109,7 +109,7 @@ div.sphinxsidebar h4 {
 div.sphinxsidebar h4 {
     font-size: 20px;
 }
- 
+
 div.sphinxsidebar h3 a {
     color: #444;
 }
@@ -120,7 +120,7 @@ div.sphinxsidebar p.logo a:hover,
 div.sphinxsidebar h3 a:hover {
     border: none;
 }
- 
+
 div.sphinxsidebar p {
     color: #555;
     margin: 10px 0;
@@ -131,25 +131,25 @@ div.sphinxsidebar ul {
     padding: 0;
     color: #000;
 }
- 
+
 div.sphinxsidebar input {
     border: 1px solid #ccc;
     font-family: 'Georgia', serif;
     font-size: 1em;
 }
- 
-/* -- body styles ----------------------------------------------------------- */
- 
+
+/* -- body styles ---------------------------------------------------------- */
+
 a {
-    color: #004B6B;
+    color: #004b6b;
     text-decoration: underline;
 }
- 
+
 a:hover {
-    color: #6D4100;
+    color: #6d4100;
     text-decoration: underline;
 }
- 
+
 div.body h1,
 div.body h2,
 div.body h3,
@@ -158,7 +158,7 @@ div.body h5,
 div.body h6 {
     font-family: 'Garamond', 'Georgia', serif;
     font-weight: normal;
-    margin: 30px 0px 10px 0px;
+    margin: 30px 0 10px 0;
     padding: 0;
 }
 
@@ -175,20 +175,20 @@ div.body h3 { font-size: 150%; }
 div.body h4 { font-size: 130%; }
 div.body h5 { font-size: 100%; }
 div.body h6 { font-size: 100%; }
- 
+
 a.headerlink {
     color: #ddd;
     padding: 0 4px;
     text-decoration: none;
 }
- 
+
 a.headerlink:hover {
     color: #444;
     background: #eaeaea;
 }
- 
+
 div.body p, div.body dd, div.body li {
-    line-height: 1.4em;
+    line-height: 1.4;
 }
 
 div.admonition {
@@ -226,27 +226,27 @@ div.highlight {
 }
 
 dt:target, .highlight {
-    background: #FAF3E8;
+    background: #faf3e8;
 }
 
 div.note {
     background-color: #eee;
     border: 1px solid #ccc;
 }
- 
+
 div.seealso {
     background-color: #ffc;
     border: 1px solid #ff6;
 }
- 
+
 div.topic {
     background-color: #eee;
 }
- 
+
 p.admonition-title {
     display: inline;
 }
- 
+
 p.admonition-title:after {
     content: ":";
 }
@@ -314,7 +314,7 @@ table.field-list td {
 }
 
 table.footnote td.label {
-    width: 0px;
+    width: 0;
     padding: 0.3em 0 0.3em 0.5em;
 }
 
@@ -340,12 +340,12 @@ ul, ol {
     margin: 10px 0 10px 30px;
     padding: 0;
 }
- 
+
 pre {
     background: #eee;
     padding: 7px 30px;
     margin: 15px -30px;
-    line-height: 1.3em;
+    line-height: 1.3;
 }
 
 dl pre, blockquote pre, li pre {
@@ -357,7 +357,7 @@ dl dl pre {
     margin-left: -90px;
     padding-left: 90px;
 }
- 
+
 tt {
     background-color: #ecf0f3;
     color: #222;
@@ -365,34 +365,33 @@ tt {
 }
 
 tt.xref, a tt {
-    background-color: #FBFBFB;
+    background-color: #fbfbfb;
     border-bottom: 1px solid white;
 }
 
 a.reference {
     text-decoration: none;
-    border-bottom: 1px dotted #004B6B;
+    border-bottom: 1px dotted #004b6b;
 }
 
 a.reference:hover {
-    border-bottom: 1px solid #6D4100;
+    border-bottom: 1px solid #6d4100;
 }
 
 a.footnote-reference {
     text-decoration: none;
     font-size: 0.7em;
     vertical-align: top;
-    border-bottom: 1px dotted #004B6B;
+    border-bottom: 1px dotted #004b6b;
 }
 
 a.footnote-reference:hover {
-    border-bottom: 1px solid #6D4100;
+    border-bottom: 1px solid #6d4100;
 }
 
 a:hover tt {
-    background: #EEE;
+    background: #eee;
 }
-
 
 @media screen and (max-width: 870px) {
 
@@ -401,22 +400,16 @@ a:hover tt {
     }
 
     div.document {
-       width: 100%;
+        width: 100%;
 
     }
 
     div.documentwrapper {
-        margin-left: 0;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     div.bodywrapper {
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
+        margin: 0;
     }
 
     ul {
@@ -443,11 +436,7 @@ a:hover tt {
         display: none;
     }
 
-
-
 }
-
-
 
 @media screen and (max-width: 875px) {
 
@@ -535,7 +524,6 @@ a:hover tt {
     }
 }
 
-
 /* scrollbars */
 
 ::-webkit-scrollbar {
@@ -573,5 +561,5 @@ a:hover tt {
 /* misc. */
 
 .revsys-inline {
-    display: none!important;
+    display: none !important;
 }
