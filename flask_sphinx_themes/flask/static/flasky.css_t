@@ -393,53 +393,24 @@ a:hover tt {
     background: #eee;
 }
 
-@media screen and (max-width: 870px) {
+.github {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+    font-size: 14px;
+    color: #888;
+}
 
-    div.sphinxsidebar {
-        display: none;
-    }
+.github a {
+    color: #888;
+}
 
-    div.document {
-        width: 100%;
-
-    }
-
-    div.documentwrapper {
-        margin: 0;
-    }
-
-    div.bodywrapper {
-        margin: 0;
-    }
-
-    ul {
-        margin-left: 0;
-    }
-
-    .document {
-        width: auto;
-    }
-
-    .footer {
-        width: auto;
-    }
-
-    .bodywrapper {
-        margin: 0;
-    }
-
-    .footer {
-        width: auto;
-    }
-
-    .github {
-        display: none;
-    }
-
+.github span {
+    display: none;
 }
 
 @media screen and (max-width: 875px) {
-
     body {
         margin: 0;
         padding: 20px 30px;
@@ -448,16 +419,21 @@ a:hover tt {
     div.documentwrapper {
         float: none;
         background: white;
+        margin: 0;
     }
 
     div.sphinxsidebar {
         display: block;
         float: none;
         width: 102.5%;
-        margin: 50px -30px -20px -30px;
-        padding: 10px 20px;
+        margin: 50px -30px 0;
+        padding: 10px 30px;
         background: #333;
         color: white;
+    }
+
+    div.sphinxsidebarwrapper {
+        padding: 0;
     }
 
     div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar p,
@@ -490,10 +466,6 @@ a:hover tt {
         padding: 0;
     }
 
-    div.footer {
-        display: none;
-    }
-
     div.bodywrapper {
         margin: 0;
     }
@@ -507,59 +479,30 @@ a:hover tt {
         display: none;
     }
 
-    .document {
+    div.footer {
         width: auto;
-    }
-
-    .footer {
-        width: auto;
-    }
-
-    .footer {
-        width: auto;
+        margin: 0 -30px -20px;
+        padding: 10px 30px 20px;
+        background: #333;
     }
 
     .github {
+        display: block;
+        position: relative;
+        margin: 0 -30px;
+        padding: 10px 30px;
+        background: #333;
+    }
+
+    .github img {
         display: none;
     }
-}
 
-/* scrollbars */
+    .github span {
+        display: inline;
+    }
 
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment {
-    display: block;
-    height: 10px;
-}
-
-::-webkit-scrollbar-button:vertical:increment {
-    background-color: #fff;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: #eee;
-    -webkit-border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    height: 50px;
-    background-color: #ccc;
-    -webkit-border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-    width: 50px;
-    background-color: #ccc;
-    -webkit-border-radius: 3px;
-}
-
-/* misc. */
-
-.revsys-inline {
-    display: none !important;
+    ul {
+        margin-left: 0;
+    }
 }
