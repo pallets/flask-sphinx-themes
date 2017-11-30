@@ -282,3 +282,30 @@ tt.xref, a tt {
 a:hover tt {
     background: #eee;
 }
+
+.github {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.github span {
+    display: none;
+}
+
+@media screen and (max-width: 875px) {
+    .github {
+        display: block;
+        position: relative;
+        margin: 10px
+    }
+
+    .github img {
+        display: none;
+    }
+
+    .github span {
+        display: inline;
+    }
+}
