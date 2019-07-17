@@ -1,6 +1,9 @@
 Flask Sphinx Themes
 ===================
 
+Modern Pallets themes have moved to https://github.com/pallets/pallets-sphinx-themes.
+The Flask theme has been updated an included there. This repository is no longer maintained.
+
 This repository contains Sphinx themes for Flask and Flask related
 projects. To use this theme in your Sphinx documentation:
 
